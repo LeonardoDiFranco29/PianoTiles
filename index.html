@@ -1,51 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
-    <title>Crossy Road Game Clone</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
+    <meta charset="utf-8">
+    <title>JS Candy Crush</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
+    <script src="script.js" charset="utf-8"></script>
   </head>
   <body>
-    <div id="counter">0</div>
-
-<div id="controlls">
-  <div>
-    <button id="forward">
-      <svg width="30" height="30" viewBox="0 0 10 10">
-        <g transform="rotate(0, 5,5)">
-          <path d="M5,4 L7,6 L3,6 L5,4" />
-        </g>
-      </svg>
-    </button>
-    <button id="left">
-      <svg width="30" height="30" viewBox="0 0 10 10">
-        <g transform="rotate(-90, 5,5)">
-          <path d="M5,4 L7,6 L3,6 L5,4" />
-        </g>
-      </svg>
-    </button>
-    <button id="backward">
-      <svg width="30" height="30" viewBox="0 0 10 10">
-        <g transform="rotate(180, 5,5)">
-          <path d="M5,4 L7,6 L3,6 L5,4" />
-        </g>
-      </svg>
-    </button>
-    <button id="right">
-      <svg width="30" height="30" viewBox="0 0 10 10">
-        <g transform="rotate(90, 5,5)">
-          <path d="M5,4 L7,6 L3,6 L5,4" />
-        </g>
-      </svg>
-    </button>
-  </div>
-</div>
-
-<div id="end">
-  <button id="retry">Retry</button>
-</div>
-<script src='https://cdnjs.cloudflare.com/ajax/libs/three.js/99/three.min.js'></script>
-    <script src="script.js"></script>
+    <div class="scoreBoard">
+      <h3>score</h3>
+      <h1 id="score"></h1>
+    </div>
+    <div class="grid"></div>
   </body>
-</html>        
+</html>   

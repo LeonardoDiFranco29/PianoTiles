@@ -1,58 +1,55 @@
-@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
-
-body {
-  margin: 0;
-  font-family: 'Press Start 2P', cursive;
-  font-size: 2em;
-  color: white;
-}
-button {
-  outline: none;
-  cursor: pointer;
-  border: none;
-  box-shadow: 3px 5px 0px 0px rgba(0,0,0,0.75);
-}
-#counter {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-#end {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  visibility: hidden;
-}
-#end button {
-  background-color: red;
-  padding: 20px 50px 20px 50px;
-  font-family: inherit;
-  font-size: inherit;
-}
-#controlls {
-  position: absolute;
-  min-width: 100%;
-  min-height: 100%;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-}
-#controlls div {
-  display: grid;
-  grid-template-columns: 50px 50px 50px;
-  grid-template-rows: auto auto;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
-  margin-bottom: 20px;
-}
-#controlls button {
-  width: 100%;
-  background-color: white;
-  border: 1px solid lightgray;
-}
-#controlls button:first-of-type {
-  grid-column: 1/-1;
-}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    height: 560px;
+    min-width: 560px;
+    margin-left: 80px;
+    margin-top: 50px;
+    background-color: rgba(109, 127, 151, 0.5);
+    padding: 5px;
+    color: #85796b;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) inset, 0 1px 0 #fff;
+  }
+  
+  .grid div {
+    height: 70px;
+    width: 70px;
+  }
+  
+  h3 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+  }
+  
+  h1 {
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+    margin-top: -10px;
+  }
+  
+  .invisible {
+    background-color: white;
+  }
+  
+  body {
+    background-image: url('https://raw.githubusercontent.com/arpit456jain/Amazing-Js-Projects/master/Candy%20Crush/utils/bg.png');
+    max-width: 100vh;
+    display: flex;
+  }
+  
+  .scoreBoard {
+    background-color: cyan;
+    border-radius: 20px;
+    margin-top: 200px;
+    margin-left: 200px;
+    width: auto;
+    height: 120px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: #85796b;
+  }
